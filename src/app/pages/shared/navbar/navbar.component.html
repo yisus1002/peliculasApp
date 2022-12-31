@@ -1,0 +1,25 @@
+<!-- <nav class="navbar  bg-body-tertiary"> -->
+<nav class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/home" >Peliculas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+      </svg>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        </ul>
+        <div class="d-flex" role="search">
+          <input #txtBuscar 
+          (keyup.enter)="buscar(txtBuscar.value)"
+          class="form-control me-2" 
+          type="search" placeholder="Buscar peliculas" aria-label="Search">
+          <button
+          (click)="buscar(txtBuscar.value)"
+           class="btn btn-outline-success" type="submit">Buscar</button>
+        </div>
+      </div>
+    </div>
+  </nav>
