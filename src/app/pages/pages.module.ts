@@ -10,7 +10,8 @@ import { SlidershowComponent } from './shared/slidershow/slidershow.component';
 import { PeliculasPosterGridComponent } from './shared/peliculas-poster-grid/peliculas-poster-grid.component';
 
 import { NgxStarsModule } from 'ngx-stars';
-// import { RatingModule } from 'ng-starrating';
+
+// import { RatingModule } from 'ng-starrating;
 import { CastSlideshowComponent } from './shared/cast-slideshow/cast-slideshow.component';
 
 @NgModule({
