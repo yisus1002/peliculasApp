@@ -9,15 +9,16 @@
           <div class="d-flex">
             <div class="col-10">
                 <div style="text-align:center">
-                    <star-rating 
-                            [value]="movie.vote_average" 
-                            [totalstars]='10' 
-                            checkedcolor="yellow" 
-                            uncheckedcolor="grey" 
-                            [size]="'14px'" 
-                            [readonly]="false"
-                    ></star-rating>
+                    <!-- <star-rating  -->
+                            <!-- [value]="movie.vote_average"  -->
+                            <!-- [totalstars]='10'  -->
+                            <!-- checkedcolor="yellow"  -->
+                            <!-- uncheckedcolor="grey"  -->
+                            <!-- [size]="'14px'"  -->
+                            <!-- [readonly]="false" -->
+                    <!-- ></star-rating> -->
                   </div>
+                  <ngx-stars [readonly]="true" [maxStars]="10" [color]="'yellow'" [initialStars]="movie.vote_average"></ngx-stars>
               </div>
               <div class="col-2">
                 {{movie.vote_average | number:'1.1-2'}}

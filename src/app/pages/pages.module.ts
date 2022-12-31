@@ -9,8 +9,8 @@ import { RouterModule } from '@angular/router';
 import { SlidershowComponent } from './shared/slidershow/slidershow.component';
 import { PeliculasPosterGridComponent } from './shared/peliculas-poster-grid/peliculas-poster-grid.component';
 
-
-import { RatingModule } from 'ng-starrating';
+import { NgxStarsModule } from 'ngx-stars';
+// import { RatingModule } from 'ng-starrating';
 import { CastSlideshowComponent } from './shared/cast-slideshow/cast-slideshow.component';
 
 @NgModule({
@@ -26,7 +26,8 @@ import { CastSlideshowComponent } from './shared/cast-slideshow/cast-slideshow.c
   imports: [
     CommonModule,
     RouterModule,
-    RatingModule,
+    // RatingModule,
+    NgxStarsModule,
     PipesModule,
   ],
   exports:[
